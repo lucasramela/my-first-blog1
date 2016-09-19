@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-    <head>
-        <title>Django Lucas blog</title>
-    </head>
-    <body>
-    	<div>
-    		
-    	</div>
-		<h1>Blogguer creado por LucasR10</h1>
-		<!-- QuerySet con la variable posts -->
-		{% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    	{% endfor %}
-
-    </body>
+<head>
+<title>Django Lucas blog</title>
+</head>
+<body>
+<h1>Blogguer creado por LucasR10</h1>
+<!-- QuerySet con la variable posts -->
+{% for post in posts %}
+<div>
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+{% endfor %}
+</body>
 </html>
